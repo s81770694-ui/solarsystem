@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Solar System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Intro Screen -->
+  <div id="intro">
+    <h1>Hello, this is our Solar System</h1>
+    <button id="enterBtn">Enter</button>
+  </div>
+
+  <!-- Main Solar System Page -->
+  <div id="solarSystem" style="display:none;">
+    <h2>Explore the Planets</h2>
+
+    <!-- Planet Images -->
+    <div class="planets">
+      <img src="media/mercury.jpg" class="planet" data-name="mercury" alt="Mercury">
+      <img src="media/venus.jpg" class="planet" data-name="venus" alt="Venus">
+      <img src="media/earth.jpg" class="planet" data-name="earth" alt="Earth">
+      <img src="media/mars.jpg" class="planet" data-name="mars" alt="Mars">
+      <img src="media/jupiter.jpg" class="planet" data-name="jupiter" alt="Jupiter">
+      <img src="media/saturn.jpg" class="planet" data-name="saturn" alt="Saturn">
+      <img src="media/uranus.jpg" class="planet" data-name="uranus" alt="Uranus">
+      <img src="media/neptune.jpg" class="planet" data-name="neptune" alt="Neptune">
+    </div>
+
+    <!-- Info Box -->
+    <div id="infoBox" style="display:none; position:fixed; bottom:20px; left:50%; transform:translateX(-50%);
+     background:rgba(0,0,0,0.8); color:#fff; padding:15px; border-radius:10px; max-width:400px; text-align:center;">
+      <p id="infoText"></p>
+    </div>
+
+    <!-- Hidden audio player -->
+    <audio id="audioPlayer"></audio>
+  </div>
+
+  <script src="script.js"></script>
+  <script>
+    // Switch from intro to solar system
+    document.getElementById("enterBtn").addEventListener("click", () => {
+      document.getElementById("intro").style.display = "none";
+      document.getElementById("solarSystem").style.display = "block";
+    });
+  </script>
+</body>
+</html>
+ 
+<link rel="stylesheet" href="style.css">
+<script src="script.js"></script>

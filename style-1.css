@@ -1,0 +1,183 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background. radial-gradient(circle at center, #000010, #000000);
+    color: white;
+    font-family: sans-serif;
+    overflow: hidden;
+ }
+
+ h1 {
+    text-align: center;
+    padding: 20px;
+    text-shadow: 0 0 15px white;
+
+ }
+
+ .intro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom, #020024, #090979, #000000);
+ }
+ 
+ .intro-screen {
+   text-align: center;
+   color: white;
+ }
+
+ .intro-screen h1 {
+  font-size: 2.5em;
+  text-shadow: 0 0 15px cyan;
+  }
+    .intro-screen button {
+        margin-top: 20px;
+        padding: 10px 20px;
+        font-size: 1.2em;
+        border: none;
+        background: cyan;
+        color: black;   
+        cursor: pointer;
+        border-radius: 10px;
+        transition: background 0.3s ease;
+    }
+    .intro-screen button:hover {
+        background: white;
+        color: black;
+    }
+
+ .solar-system {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 40px;
+ }
+ .gezegen {
+    border-radius: 50%;
+    margin: 40px;
+    transition: transform 0.3s ease;
+    animation: spin 10s linear infinite;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+ }
+    .gezegen:hover {
+        transform: scale(1.2);
+    }
+    .mercury {
+        width: 30px;
+        height: 30px;
+        background-image: url(media/mercury.jpg);
+         animation-duration: 6s;
+    }
+    .venus {
+        width: 40px;
+        height: 40px;
+        background-image: url(media/venus.jpg);
+         animation-duration: 8s;
+
+    }
+    .earth {
+        width: 50px;
+        height: 50px;
+        background: url(media/earth.jpg);
+         animation-duration: 10s;
+    }
+    .mars {
+        width: 45px;
+        height: 45px;
+        background: url(media/mars.jpg);
+         animation-duration: 12s;
+    }
+    .jupiter {
+        width: 80px;
+        height: 80px;
+        background: url(media/jupiter.jpg);
+         animation-duration: 15s;
+    }
+    .saturn {
+        width: 70px;
+        height: 70px;
+        background: url(media/saturn.jpg);
+        position: relative;
+        animation-duration: 18s;
+    }
+    .uranus {
+        width: 60px;
+        height: 60px;
+        background: url(media/uranus.jpg);
+        animation-duration: 20s;
+    }
+    .neptune {
+        width: 60px;
+        height: 60px;
+        background: url(media/neptune.jpg);
+        animation-duration: 22s;
+    }
+    keyframes spin {
+        from { transform: rotate(0deg); }
+        to { transform: rotate(360deg); }
+    }
+
+    .info-box {
+        display: none;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: rgba(0, 0, 0, 0.9);
+        color: white;
+        padding: 20px;
+        border-radius: 10px;
+        text-align: center;
+        box-shadow: 0 0 20px rgba(255,255,255,0.5);
+        z-index: 10;
+    }
+    
+    .info-box.active {
+        display: block;
+    }
+
+    .info-box.button {
+      margin-top: 10px;
+      padding: 5px 10px;
+      border: none;
+      background: crimson;
+      color: white;   
+      cursor: pointer;
+      border-radius: 5px;
+         }
+
+    #intro {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: black;
+  color: white;
+  text-align: center;
+}
+
+#intro h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+#enterBtn {
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background: #ffcc00;
+  color: black;
+  transition: 0.3s;
+}
+
+#enterBtn:hover {
+  background: #ffaa00;
+  transform: scale(1.05);
+}
